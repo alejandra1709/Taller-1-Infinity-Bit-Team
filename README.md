@@ -651,6 +651,7 @@ print("La raíz cúbica del menor número (",n1,") es: " , raiz_menor)
 >### 8.Escriba un programa al que se le ingrese la frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.
 
 Teniendo en cuenta la siguiente tabla:
+
 [![Captura-de-pantalla-2024-03-13-154404.png](https://i.postimg.cc/mgNQVWT6/Captura-de-pantalla-2024-03-13-154404.png)](https://postimg.cc/87cJP3Jh)
 
 Se escriben todos los casos posibles desde rayos gamma hasta microondas, sino esta entre ninguna de estas regiones, entoncese es de radio. 
