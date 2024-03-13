@@ -34,7 +34,16 @@ else:
     print ("el número " , x , " no es múltiplo de " , y)
 ```
 Se inicializan las variables x e y de tipo float, y por medio de la función input, se les asigna el valor que se les es ingresado por el terminal. A continuación, se pregunta si el residuo de la división del primer número entre el segundo (x/y) es 0, si esto es así, se puede afirmar que el primer número es múltiplo del segundo, así que se escribe el mensaje de que el número x es múltiplo del número y, si esta condición no se cumple, se pasa al else en donde se imprime el mensaje que dice que el número x no es múltiplo de y.
-
+```mermaid
+flowchart TD
+    A(inicio)-->B[numero real x]
+    B-->C[numero real y]
+    C-->D{residuo de x/y es cero?}
+    D-->|si|E[x es multiplo de y]
+    D-->|no|F[x numero no es multiplo de y]
+    F-->G[FIN]
+    E-->G
+```
 >### 5.Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
 
 Primero la variable *a*  se declara como un numero real.  Despues el ususario ingresa un numero por medio de la función *input*, y despues es convertido a un real por medio de la funcion *float*. Despues se hace lo mismo con las variables *b* y *c*
