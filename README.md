@@ -687,3 +687,5 @@ elif Hz>3e8 :
 else :
     print("La onda se encuentra en: Radio")
 ```
+## Extra  
+#### [Video](https://www.youtube.com/watch?v=BC0Rw9O60do)
