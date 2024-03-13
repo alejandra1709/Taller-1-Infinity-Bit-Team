@@ -1,5 +1,5 @@
 # Taller-1-Infinity-Bit-Team
-
+[![unnamed.png](https://i.postimg.cc/3RGXGKMH/unnamed.png)](https://postimg.cc/ygV34CYf)
 ```mermaid
 flowchart TD
     A("inicio")-->B
