@@ -648,3 +648,32 @@ print("La potencia del mayor número (",n5,") elevado al menor número (",n1,") 
 raiz_menor=n1**(1/3)
 print("La raíz cúbica del menor número (",n1,") es: " , raiz_menor)
 ```
+>### 8.Escriba un programa al que se le ingrese la frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.
+
+Teniendo en cuenta la siguiente tabla:
+[![Captura-de-pantalla-2024-03-13-154404.png](https://i.postimg.cc/mgNQVWT6/Captura-de-pantalla-2024-03-13-154404.png)](https://postimg.cc/87cJP3Jh)
+
+Se escriben todos los casos posibles desde rayos gamma hasta microondas, sino esta entre ninguna de estas regiones, entoncese es de radio. 
+ ```python
+Hz = float(input("Ingrese frecuencia de una honda en Hz: "))
+if Hz>30.0e18 :
+    print("La onda se encuentra en: rayos gamma")
+elif Hz>30.0e15:
+    print("La onda se encuentra en: rayos X")
+elif Hz> 1.5e15 :
+    print("La onda se encuentra en: Ultravioleta extremo")
+elif Hz>7.89e14 :
+    print("La onda se encuentra en: Ultravioleta cercano")
+elif Hz>384e12:
+    print("La onda se encuentra en: Espectro Visible")
+elif Hz>120e12 :
+    print("La onda se encuentra en: Infrarrojo cercano")
+elif Hz>6.00e12 :
+    print("La onda se encuentra en: Infrarrojo medio	")
+elif Hz>300e9 :
+    print("La onda se encuentra en: Infrarrojo lejano")
+elif Hz>3e8 :
+    print("La onda se encuentra en: Microondas") 
+else :
+    print("La onda se encuentra en: Radio")
+```
