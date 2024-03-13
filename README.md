@@ -1,6 +1,29 @@
 # Taller-1-Infinity-Bit-Team
 >### 1.Realice el quiz Python Beginner Quiz (20 preguntas) y adjunte pantallazo con el resultado (mínimo 90% bien).
 [![unnamed.png](https://i.postimg.cc/3RGXGKMH/unnamed.png)](https://postimg.cc/ygV34CYf)
+[![Captura-de-pantalla-2024-03-04-161155.png](https://i.postimg.cc/rFtGSDn8/Captura-de-pantalla-2024-03-04-161155.png)](https://postimg.cc/9rCq2QHS)
+
+>### 3.Realice un programa que lea un número enteros y determine si es par o impar.
+
+Primero la variable *x* se declara como un numero entero.  Despues el ususario ingresa un numero por medio de la función *input*, y despues es convertido a un entero por medio de la funcion *int*.
+```python
+x : int = int(input("ingrese un número entero: "))
+```
+Despues si el modulo del numero que ingreso el usuario y 2 es igual el numero es par. Ya que todo numero par es divisible por 2.
+```python
+x : int = int(input("ingrese un número entero: "))
+if x % 2 == 0:
+  print("el número" , x , "es par")
+```
+Si el modulo no es igual a cero el numero es impar.
+```python
+x : int = input("ingrese un número entero: ")
+if (int(x) % 2 == 0):
+  print("el número" , x , "es par")
+else:
+  print("el número" , x , "es impar")
+```
+
 >### 4.Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
 ```
 x: float = input ("ingrese un número real: ")
@@ -11,6 +34,32 @@ else:
     print ("el número " , x , " no es múltiplo de " , y)
 ```
 Se inicializan las variables x e y de tipo float, y por medio de la función input, se les asigna el valor que se les es ingresado por el terminal. A continuación, se pregunta si el residuo de la división del primer número entre el segundo (x/y) es 0, si esto es así, se puede afirmar que el primer número es múltiplo del segundo, así que se escribe el mensaje de que el número x es múltiplo del número y, si esta condición no se cumple, se pasa al else en donde se imprime el mensaje que dice que el número x no es múltiplo de y.
+
+>### 5.Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
+
+Primero la variable *a*  se declara como un numero real.  Despues el ususario ingresa un numero por medio de la función *input*, y despues es convertido a un real por medio de la funcion *float*. Despues se hace lo mismo con las variables *b* y *c*
+```python
+a : float = float(input("Ingrese primer numero real: "))
+b : float = float (input("Ingrese segundo numero real: "))
+c : float = float (input("Ingrese tercer numero real: "))
+```
++ Despues se escriben los casos:
+ + Si la suma de los dos primeros numeros es mayor que el tercer numero
+ + Si la suma de los dos primeros numeros es menor que el tercer numero
+ + Si la suma de los primeros numeros es igual al tercer numero
+ 
+```python
+a : float = float(input("Ingrese primer numero real: "))
+b : float = float (input("Ingrese segundo numero real: "))
+c : float = float (input("Ingrese tercer numero real: "))
+if a+b>c :
+	print("La suma de los dos primeros numeros es mayor que el tercer numero")
+elif a+b<c:
+	print("la suma de los dos primeros numeros es menor que el tercer numero")
+else :
+	print("la suma de los primeros numeros es igual al tercer numero")
+```
+
 >### 6.Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
 ```
 letra:str=input("escriba una letra: ")
