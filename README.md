@@ -9,7 +9,7 @@ Primero la variable *x* se declara como un numero entero.  Despues el ususario i
 ```python
 x : int = int(input("ingrese un número entero: "))
 ```
-Despues si el modulo del numero que ingreso el usuario y 2 es igual el numero es par. Ya que todo numero par es divisible por 2.
+Despues si el modulo del numero que ingreso el usuario y 2 es igual; el numero es par. Ya que todo numero par es divisible por 2.
 ```python
 x : int = int(input("ingrese un número entero: "))
 if x % 2 == 0:
