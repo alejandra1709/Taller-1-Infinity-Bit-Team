@@ -1,5 +1,7 @@
 # Taller-1-Infinity-Bit-Team
+>### 1.Realice el quiz Python Beginner Quiz (20 preguntas) y adjunte pantallazo con el resultado (mínimo 90% bien).
 [![unnamed.png](https://i.postimg.cc/3RGXGKMH/unnamed.png)](https://postimg.cc/ygV34CYf)
+
 ```mermaid
 flowchart TD
     A("inicio")-->B
