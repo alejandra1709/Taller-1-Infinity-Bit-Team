@@ -25,7 +25,7 @@ else:
 ```
 
 >### 4.Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
-```
+```python
 x: float = input ("ingrese un número real: ")
 y: float = input ("ingrese otro número real: ")
 if (float(x)%float(y) == 0):
@@ -61,7 +61,7 @@ else :
 ```
 
 >### 6.Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
-```
+```python
 letra:str=input("escriba una letra: ")
 a=ord(letra)
 if (a==65 or a==69 or a==73 or a==79 or a==85 or a==97 or a==101 or a==105 or a==111 or a==117):
@@ -94,7 +94,7 @@ Se comienza inicializando la variable letra de tipo string y asignandole un valo
 >La potencia del mayor número elevado al menor número
 >
 >La raíz cúbica del menor número
-```
+```python
 a: float = float(input("Escriba el primer número real: "))
 b: float = float(input("Escriba el segundo número real: "))
 c: float = float(input("Escriba el tercer número real: "))
