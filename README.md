@@ -15,7 +15,7 @@ x : int = int(input("ingrese un número entero: "))
 if x % 2 == 0:
   print("el número" , x , "es par")
 ```
-Si el modulo no es igual a cero el numero es impar.
+Sino es par, el numero es impar.
 ```python
 x : int = input("ingrese un número entero: ")
 if (int(x) % 2 == 0):
