@@ -13,9 +13,9 @@
 >### 2.Realice un programa que lea tres números reales y determine cuál es el mayor.
 Primero se declararan las 3 variables que representaran los 3 numeros enteros y se identifican como enteros mediante la funcion *float*
 ```python
-primer_numero:int= input("ingrese un núnmero: ")
-segundo_numero:int= input ("ingrese otro numero: ")
-tercer_numero:int= input ("ingrese un tercer numero: ")
+primer_numero:float= input("ingrese un núnmero: ")
+segundo_numero:float= input ("ingrese otro numero: ")
+tercer_numero:float= input ("ingrese un tercer numero: ")
 ```
 Posterior a esto realizamos una cadena de funciones *if* y *elif* que a partir de los operadores *>* y *and* determinaran cual de los numeros dados es mayor.
 Si el primero es mayor se cumplira la condicion del *if* por lo que se imprimira en la consola mediante la funcion print que el primer numero es el mayor, por otra parte si el segundo es mayor se cumplira la condicion del primer *elif* por lo que se imprimira en la consola mediante la funcion print que el segundo numero es el mayor y por ultimo si el tercero es el mayor se cumplira la condicion del segundo *elif* por lo que se imprimra en la consola mediante el comando print que el tercer numero es el mayor.
