@@ -17,10 +17,12 @@ primer_numero:float= input("ingrese un núnmero: ")
 segundo_numero:float= input ("ingrese otro numero: ")
 tercer_numero:float= input ("ingrese un tercer numero: ")
 ```
-Posterior a esto realizamos una cadena de funciones *if* y *elif* que a partir de los operadores *>* y *and* determinaran cual de los numeros dados es mayor.
-Si el primero es mayor se cumplira la condicion del *if* por lo que se imprimira en la consola mediante la funcion print que el primer numero es el mayor, por otra parte si el segundo es mayor se cumplira la condicion del primer *elif* por lo que se imprimira en la consola mediante la funcion print que el segundo numero es el mayor y por ultimo si el tercero es el mayor se cumplira la condicion del segundo *elif* por lo que se imprimra en la consola mediante el comando print que el tercer numero es el mayor.
+Posterior a esto realizamos una cadena de funciones *if* y *elif* que a partir de los operadores *>*, *and* y = determinaran cual de los numeros dados es mayor.
+Si todos son iguales se cumplira la condicion del *if* por lo tanto se escribira en consola mediante un *print* todos los numeros son iguales,por otro lado si el primero es mayor se cumplira la condicion del primer *elif* por lo que se imprimira en la consola mediante la funcion *print* que el primer numero es el mayor, al contrario si el segundo es mayor se cumplira la condicion del segundo *elif* por lo que se imprimira en la consola mediante la funcion *print* que el segundo numero es el mayor y por ultimo si el tercero es el mayor se cumplira la condicion del tercer *elif* por lo que se imprimra en la consola mediante el comando *print* que el tercer numero es el mayor.
 ```python
-if primer_numero > segundo_numero and primer_numero > tercer_numero:
+if primer_numero == segundo_numero and primer_numero == tercer_numero:
+    print("Todos los numeros son iguales")
+elif primer_numero > segundo_numero and primer_numero > tercer_numero:
     print("El primer numero es el mayor")
 elif segundo_numero > primer_numero and segundo_numero> tercer_numero:
     print("El segundo número es el mayor")
