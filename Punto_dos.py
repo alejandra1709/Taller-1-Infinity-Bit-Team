@@ -1,11 +1,12 @@
-a : float = float(input("Ingrese primer numero: "))
-b : float = float(input("Ingrese segundo numero: "))
-c : float = float(input("Ingrese tercer numero: "))
-if a==b and a==c:
-  print("Los tres números son iguales")
-elif a>=b and a>=c :
-  print("El número mayor es ",a)
-elif b>=a and b>=c :
-  print("El número mayor es ",b)
-else :
-  print("El número mayor es ",c)
+primer_numero: float= input("ingrese un núnmero: ")
+segundo_numero: float= input ("ingrese otro numero: ")
+tercer_numero: float= input ("ingrese un tercer numero: ")
+if primer_numero == segundo_numero and primer_numero == tercer_numero:
+    print("Todos los numeros son iguales")
+elif primer_numero > segundo_numero and primer_numero > tercer_numero:
+    print("El primer numero es el mayor")
+elif segundo_numero > primer_numero and segundo_numero> tercer_numero:
+    print("El segundo número es el mayor")
+else:
+    print("El tercer numero es mayor")
+
