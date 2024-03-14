@@ -10,6 +10,23 @@
 [![unnamed.png](https://i.postimg.cc/3RGXGKMH/unnamed.png)](https://postimg.cc/ygV34CYf)
 [![Captura-de-pantalla-2024-03-04-161155.png](https://i.postimg.cc/rFtGSDn8/Captura-de-pantalla-2024-03-04-161155.png)](https://postimg.cc/9rCq2QHS)
 
+>### 2.Realice un programa que lea tres números reales y determine cuál es el mayor.
+Primero se declararan las 3 variables que representaran los 3 numeros enteros y se identifican como enteros mediante la funcion *float*
+```python
+primer_numero:int= input("ingrese un núnmero: ")
+segundo_numero:int= input ("ingrese otro numero: ")
+tercer_numero:int= input ("ingrese un tercer numero: ")
+```
+Posterior a esto realizamos una cadena de funciones *if* y *elif* que a partir de los operadores *>* y *and* determinaran cual de los numeros dados es mayor.
+Si el primero es mayor se cumplira la condicion del *if* por lo que se imprimira en la consola mediante la funcion print que el primer numero es el mayor, por otra parte si el segundo es mayor se cumplira la condicion del primer *elif* por lo que se imprimira en la consola mediante la funcion print que el segundo numero es el mayor y por ultimo si el tercero es el mayor se cumplira la condicion del segundo *elif* por lo que se imprimra en la consola mediante el comando print que el tercer numero es el mayor.
+```python
+if primer_numero > segundo_numero and primer_numero > tercer_numero:
+    print("El primer numero es el mayor")
+elif segundo_numero > primer_numero and segundo_numero> tercer_numero:
+    print("El segundo número es el mayor")
+elif tercer_numero>primer_numero and tercer_numero>segundo_numero:
+    print("El tercer numero es mayor")
+```
 >### 3.Realice un programa que lea un número enteros y determine si es par o impar.
 
 Primero la variable *x* se declara como un numero entero.  Despues el ususario ingresa un numero por medio de la función *input*, y despues es convertido a un entero por medio de la funcion *int*.
@@ -695,5 +712,114 @@ elif Hz>3e8 :
 else :
     print("La onda se encuentra en: Radio")
 ```
+>### 9.Escriba un programa que reciba el nombre en minúsculas de un país de America y retorne la ciudad capital, si el país no pertenece al continente debe arrojar país no identificado.
+Primero se define una variable de tipo *str* a travez de un *input*.
+```python
+nombre_pais=str(input("Escribe el nombre de un país de Ámerica en minusculas: "))
+```
+Posterior a esto se crea una secuencia de *if* y *elif* en la cual si la variable corresponde a alguno de los datos dentro de los *if* y *elif* que seran los nombres en minuscula de los paises de Ámerica imprimira en la consola mediante un *print* la capital del pais escogido.
+```python
+if nombre_pais == "argentina":
+    print("Buenos Aires")
+elif nombre_pais == "bahamas":
+    print("Nasáu")
+elif nombre_pais == "barbados":
+    print ("Bridgetown")
+elif nombre_pais == "belice":
+    print ("Belmopán")
+elif nombre_pais == "bolivia":
+    print ("Sucre")
+elif nombre_pais == "brasil":
+    print("Brasilia")
+elif nombre_pais == "canada":
+    print("Ottawa")
+elif nombre_pais == "chile":
+    print("Santiago")
+elif nombre_pais == "colombia":
+    print ("Bogotá")
+elif nombre_pais == "costa rica":
+    print ("San José")
+elif nombre_pais == "cuba":
+    print ("La Habana")
+elif nombre_pais == "dominica":
+    print ("Roseau")
+elif nombre_pais == "ecuador":
+    print ("Quito")
+elif nombre_pais == "el salvador":
+    print ("San Salvador")
+elif nombre_pais == "granada":
+    print ("Saint George")
+elif nombre_pais == "estados unidos":
+    print ("Washington D.C")
+elif nombre_pais == "guatemala":
+    print ("Ciudad de Guatemala")
+elif nombre_pais == "guyana":
+    print ("Georgetown")
+elif nombre_pais == "haiti":
+    print ("Puerto Príncipe")
+elif nombre_pais == "honduras":
+    print ("Tegucigalpa")
+elif nombre_pais == "jamaica":
+    print ("Kingstone")
+elif nombre_pais == "mexico":
+    print ("Ciudad de México")
+elif nombre_pais == "nicaragua":
+    print ("Managua")
+elif nombre_pais == "panama":
+    print ("Ciudad de Panamá")
+elif nombre_pais == "paraguay":
+    print ("Asunción")
+elif nombre_pais == "peru":
+    print ("Lima")
+elif nombre_pais == "colombia":
+    print ("Bogotá")
+elif nombre_pais == "republica dominicana":
+    print ("Santo Domingo")
+elif nombre_pais == "surinam":
+    print ("paramaribo")
+elif nombre_pais == "uruguay":
+    print ("Montevideo")
+elif nombre_pais == "venzuela":
+    print ("Caracas")
+```
+En el caso que la variable escrita no corresponda a uno de los paises especificados el la cadena de *if* y *elif* se escribira gracias a un *else* y mediante un *print* *País no identificado*
+```python
+else:
+    print ("País no identificado")
+```
+>### 10. Escriba un programa que dada una distancia calcule:
+>El tiempo que le tomaría a la luz recorrer la distancia.
+>
+>El tiempo que le tomaría al sonido (en el aire) recorrer la distancia.
+>
+>El tiempo que le tomaría al vehiculo comercial más veloz recorrer la distancia.
+>
+>El tiempo que le tomaría a Bolt recorrer la distancia.
+
+Primero se asignara un valor a todas las variables, la primera de ellas, la distancia por medio de la funcion *input*, a las demas simplemente se les asigna su valor correspondiente en la vida real.
+```python
+distancia = float(input("Escribe una distancia en metros: "))
+velocidad_luz:int= 300000000
+velocidad_sonido:int=344
+velocidad_bolt:float=11.6667
+#teniendo en cuenta que el vehiculo comercial mas rapido es el Koenigsegg Jesko Absolut
+velocidad_vehiculo:float=147.778
+```
+Luego de esto se definiran unas nuevas variables, esta vez con la operacion necesaria para hayar el tiempo requerido. Esto lo haremos mediante la ecuacion *tiempo=distancia/velocidad* , siendo *distancia* y *velocidad* valores correspondientes a las variabels anteriormente definidas.
+```python
+op1:float= (float(distancia)/velocidad_luz)
+op2:float= (float(distancia)/velocidad_sonido)
+op3:float= (float (distancia)/velocidad_vehiculo)
+op4:float= (float(distancia)/velocidad_bolt)
+```
+Por ultimo, mediante la funcion *print* se imprimira en la consola un mensaje que dice el tiempo en segundos que demoraria cada una de las variables de velocidad en recorrer la de distancia.
+```python
+print ("El tiempo que le tomaria recorrer "+str(distancia) +" metros a la luz es de "+str(op1)+ " segundos")
+print ("El tiempo que le tomaria recorrer "+str(distancia) +" metros al sonido es de "+str(op2)+ " segundos")
+print ("El tiempo que le tomaria recorrer "+str(distancia) +" metros al vehiculo comercial mas rapido es de "+str(op3)+ " segundos")
+print ("El tiempo que le tomaria recorrer "+str(distancia) +" metros a Usain Bolt es de "+str(op4)+ " segundos")
+```
+
+
 # Extra  
 ## [Video](https://www.youtube.com/watch?v=BC0Rw9O60do)
