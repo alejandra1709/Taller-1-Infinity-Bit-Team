@@ -1,4 +1,11 @@
-# Taller-1-Infinity-Bit-Team
+# TALLER 1
+## **Infinity Bit Team (∞BT)**
+* Juan Diego Cárdenas Olarte
+* Sebastián Céspedes Rico
+* Alejandra Landines Sanabria
+
+[![logo.jpg](https://i.postimg.cc/pdcVKPsT/logo.jpg)](https://postimg.cc/JyJWLCVV)
+
 >### 1.Realice el quiz Python Beginner Quiz (20 preguntas) y adjunte pantallazo con el resultado (mínimo 90% bien).
 [![unnamed.png](https://i.postimg.cc/3RGXGKMH/unnamed.png)](https://postimg.cc/ygV34CYf)
 [![Captura-de-pantalla-2024-03-04-161155.png](https://i.postimg.cc/rFtGSDn8/Captura-de-pantalla-2024-03-04-161155.png)](https://postimg.cc/9rCq2QHS)
