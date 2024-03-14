@@ -18,7 +18,7 @@ segundo_numero:float= input ("ingrese otro numero: ")
 tercer_numero:float= input ("ingrese un tercer numero: ")
 ```
 Posterior a esto realizamos una cadena de funciones *if* y *elif* que a partir de los operadores *>*, *and* y = determinaran cual de los numeros dados es mayor.
-Si todos son iguales se cumplira la condicion del *if* por lo tanto se escribira en consola mediante un *print* todos los numeros son iguales,por otro lado si el primero es mayor se cumplira la condicion del primer *elif* por lo que se imprimira en la consola mediante la funcion *print* que el primer numero es el mayor, al contrario si el segundo es mayor se cumplira la condicion del segundo *elif* por lo que se imprimira en la consola mediante la funcion *print* que el segundo numero es el mayor y por ultimo si el tercero es el mayor se cumplira la condicion del tercer *elif* por lo que se imprimra en la consola mediante el comando *print* que el tercer numero es el mayor.
+Si todos son iguales se cumplira la condicion del *if* por lo tanto se escribira en consola mediante un *print* todos los numeros son iguales,por otro lado si el primero es mayor se cumplira la condicion del primer *elif* por lo que se imprimira en la consola mediante la funcion *print* que el primer numero es el mayor, al contrario si el segundo es mayor se cumplira la condicion del segundo *elif* por lo que se imprimira en la consola mediante la funcion *print* que el segundo numero es el mayor y por ultimo si ninguna de las condidiones anteriores se cumple, gracias a la funcion *else* se imprimira en la consola mediante la funcion *print* que el tercer numero es el mayor.
 ```python
 if primer_numero == segundo_numero and primer_numero == tercer_numero:
     print("Todos los numeros son iguales")
@@ -26,8 +26,25 @@ elif primer_numero > segundo_numero and primer_numero > tercer_numero:
     print("El primer numero es el mayor")
 elif segundo_numero > primer_numero and segundo_numero> tercer_numero:
     print("El segundo número es el mayor")
-elif tercer_numero>primer_numero and tercer_numero>segundo_numero:
+else:
     print("El tercer numero es mayor")
+```
+```mermaid
+flowchart TD
+    A(Inicio) --> B[Número real a]
+    B--> C[Número real b]
+    C--> D[Número real c]
+    D-->E{a es igual que b y que c ?}
+    E-->|si|F[Todos los números son iguales]
+    E-->|no|H{a es mayor que b y que c ?}
+    H-->|si|I[a es el numero mayor]
+    H-->|no|J{b es mayor que a y c ?}
+    J-->|si|K[b es el numero mayor]
+    J-->|no|L[c es el numero mayor]
+    L-->M(Fin)
+    F-->M 
+    I-->M
+    K-->M
 ```
 >### 3.Realice un programa que lea un número enteros y determine si es par o impar.
 
